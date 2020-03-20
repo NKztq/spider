@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf8>
+    <title>mock web</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href=http://1.1.1.1:80/mock1.html> mock1 </a></li>
+        <ul>
+            <li><a href='http://1.1.1.1:80/mock5.html'> mock5 </a></li>
+            <ul>
+                <li><a href='http://1.1.1.1:80/mock8.html'> mock8 </a></li>
+            </ul>
+        </ul>
+        <li><a href="http://1.1.1.1:80/mock2.html"> mock2 </a></li>
+        <ul>
+            <li><a href='http://1.1.1.1:80/mock6.html'> mock6 </a></li>
+        </ul>
+        <li><a href='http://1.1.1.1:80/mock3.html'> mock3 </a></li>
+        <ul>
+            <li><a href='http://1.1.1.1:80/mock7.html'> mock7 </a></li>
+        </ul>
+        <li><a href='http://1.1.1.1:80/mock4.html'> mock4 </a></li>
+
+        <li><a href='//baidu.com/mock.html'> mock4 </a></li>
+
+        <li><a href="'should-not-match.html'"> should not be matched </a></li>
+        <li><a href="../path"> should not be matched </a></li>
+        <li><a href="//host/path"> should not be matched </a></li>
+        <li><a href="http://h.o.s.t/test"> should not be matched </a></li>
+        <li><a href="http://h.o.s.t/test/"> should not be matched </a></li>
+        <li><a href="http://h.o.s.t/test/#more"> should not be matched </a></li>
+    </ul>
+</body>
+
+</html>
